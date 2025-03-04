@@ -43867,12 +43867,12 @@ a.u-link.u-text-hover-grey-90:hover {
 } 
 
 .u-footer .u-sheet-1 {
-  min-height: 144px;
+  min-height: 132px;
 }
 
 .u-footer .u-layout-wrap-1 {
   width: 100%;
-  margin: 0 0 44px;
+  margin: 16px auto;
 }
 
 .u-footer .u-layout-cell-1 {
@@ -43934,17 +43934,19 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 1199px) {
   .u-footer .u-sheet-1 {
-    min-height: 12px;
+    min-height: 194px;
   }
 
   .u-footer .u-layout-wrap-1 {
+    margin-top: 22px;
+    margin-bottom: 22px;
     margin-right: initial;
     margin-left: initial;
     width: auto;
   }
 
   .u-footer .u-layout-cell-1 {
-    min-height: 753px;
+    min-height: 156px;
   }
 
   .u-footer .u-container-layout-1 {
@@ -43953,11 +43955,11 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-layout-cell-2 {
-    min-height: 753px;
+    min-height: 156px;
   }
 
   .u-footer .u-layout-cell-3 {
-    min-height: 753px;
+    min-height: 156px;
   }
 
   .u-footer .u-container-layout-3 {
@@ -43971,9 +43973,25 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 991px) {
+  .u-footer .u-sheet-1 {
+    min-height: 164px;
+  }
+
+  .u-footer .u-layout-cell-1 {
+    min-height: 125px;
+  }
+
   .u-footer .u-container-layout-1 {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .u-footer .u-layout-cell-2 {
+    min-height: 125px;
+  }
+
+  .u-footer .u-layout-cell-3 {
+    min-height: 125px;
   }
 
   .u-footer .u-container-layout-3 {
@@ -43991,9 +44009,21 @@ a.u-link.u-text-hover-grey-90:hover {
     min-height: 707px;
   }
 
+  .u-footer .u-layout-cell-1 {
+    min-height: 753px;
+  }
+
   .u-footer .u-container-layout-1 {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .u-footer .u-layout-cell-2 {
+    min-height: 753px;
+  }
+
+  .u-footer .u-layout-cell-3 {
+    min-height: 753px;
   }
 
   .u-footer .u-container-layout-3 {
@@ -44007,12 +44037,12 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 575px) {
   .u-footer .u-sheet-1 {
-    min-height: 248px;
+    min-height: 216px;
   }
 
   .u-footer .u-layout-wrap-1 {
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     width: auto;
     margin-right: initial;
     margin-left: initial;
