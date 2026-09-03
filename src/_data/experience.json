@@ -1,0 +1,62 @@
+[
+  {
+    "org": "Parker Meggitt",
+    "role": "Manufacturing Engineering Intern",
+    "type": "Internship",
+    "summary": "Supported aerospace fire-suppression production with fixture design, safety shielding, work instructions, and corrective-action work.",
+    "highlights": [
+      "Designed a multi-gauge pressure-test fixture for simultaneous cycling",
+      "Engineered protective safety shielding for personnel",
+      "Partnered with tool design and production teams on fabrication and process improvements",
+      "Updated work instructions and supported Lean-aligned manufacturing improvements"
+    ],
+    "skills": ["Fixture Design", "CAD", "Lean Manufacturing", "Work Instructions", "Corrective Action"],
+    "logo": "/assets/images/logos/parker-meggitt.png",
+    "project": "/projects/parker-meggitt/"
+  },
+  {
+    "org": "Accu-Glass Products",
+    "role": "Engineering Intern",
+    "type": "Internship",
+    "summary": "Manufactured and inspected high-precision vacuum-system components while supporting CAD documentation and CNC production.",
+    "highlights": [
+      "Operated Haas 3-axis CNC mills and 2-/4-axis lathes for production parts",
+      "Created SolidWorks models and manufacturing drawings",
+      "Performed QC with calipers, micrometers, gauge pins, and leak testing",
+      "Collaborated with machinists on work-holding and cycle-time improvements"
+    ],
+    "skills": ["CNC Machining", "SolidWorks", "GD&T", "Quality Control", "Haas Equipment"],
+    "logo": "/assets/images/logos/accuglass.png",
+    "project": "/projects/accu-glass/"
+  },
+  {
+    "org": "NAU Formula SAE",
+    "role": "Co-founder & Front Suspension Lead",
+    "type": "Team Leadership",
+    "summary": "Helped launch NAU’s Formula SAE program and owned front pushrod suspension development from geometry through CNC machining and validation.",
+    "highlights": [
+      "Designed front pushrod rocker geometry for linear motion ratio and manufacturability",
+      "Used MATLAB load transfer analysis and ANSYS structural simulation",
+      "Programmed and machined components in Mastercam on CNC equipment",
+      "Supported vehicle instrumentation and performance data collection"
+    ],
+    "skills": ["SolidWorks", "ANSYS", "MATLAB", "Mastercam", "Lotus Shark", "Testing"],
+    "logo": "/assets/images/logos/nau.png",
+    "project": "/projects/formula-sae/"
+  },
+  {
+    "org": "NASA Student Launch",
+    "role": "Avionics Team Member",
+    "type": "Competition Team",
+    "summary": "Contributed to a high-power rocket program targeting 4,000–5,000 ft with dual-deployment recovery and real-time GPS tracking.",
+    "highlights": [
+      "Owned 915 MHz Featherweight GPS integration and pre-flight verification",
+      "Supported Raven altimeter dual-deployment recovery architecture",
+      "Calculated black-powder charge estimates and ran incremental ground tests",
+      "Helped achieve full recovery across five test flights"
+    ],
+    "skills": ["Avionics", "Testing", "GPS Telemetry", "Ground Testing", "Systems Integration"],
+    "logo": "/assets/images/logos/nau.png",
+    "project": "/projects/nasa-student-launch/"
+  }
+]

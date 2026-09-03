@@ -1,0 +1,176 @@
+---
+layout: layouts/base.njk
+permalink: /
+pageTitle: Andrew Estrada — Mechanical Engineer
+description: Mechanical engineer with Formula SAE suspension design, manufacturing engineering internships, CNC machining, and NASA Student Launch experience. Design through testing for real hardware.
+ogImage: /assets/images/projects/fsae-hero.jpg
+---
+<section class="home-hero">
+  <div class="home-hero__media" aria-hidden="true">
+    <img
+      src="/assets/images/projects/fsae-hero.jpg"
+      alt=""
+      width="1920"
+      height="1440"
+      fetchpriority="high"
+    >
+  </div>
+  <div class="container home-hero__content">
+    <p class="eyebrow">Mechanical Engineering Portfolio</p>
+    <h1>Andrew Estrada</h1>
+    <p class="home-hero__role">Mechanical Engineer</p>
+    <p class="lede">
+      I design, analyze, machine, and test mechanical systems — with Formula SAE suspension development and manufacturing engineering internships as proof.
+    </p>
+    <div class="cta-row">
+      <a class="button" href="/projects/">View engineering work</a>
+      <a class="button button--secondary" href="{{ site.resume.pdf }}">Download resume</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="proof-strip reveal">
+      <div class="proof-item">
+        <strong>Design → Test</strong>
+        <span>Full process ownership from CAD and analysis to fabrication and validation</span>
+      </div>
+      <div class="proof-item">
+        <strong>Formula SAE</strong>
+        <span>Front pushrod suspension, rocker design, ANSYS, CNC machining</span>
+      </div>
+      <div class="proof-item">
+        <strong>Manufacturing</strong>
+        <span>Fixture design, Haas CNC production, QC, and Lean support</span>
+      </div>
+      <div class="proof-item">
+        <strong>B.S. ME</strong>
+        <span>Northern Arizona University</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2>Engineering case studies</h2>
+      </div>
+      <p>Compact project write-ups with role clarity, process, constraints, and measurable results.</p>
+    </div>
+    <div class="project-grid">
+      {% for project in collections.featuredProjects %}
+      <div class="reveal">{% include "components/project-card.njk" %}</div>
+      {% endfor %}
+    </div>
+    <p class="cta-row">
+      <a class="text-link" href="/projects/">Browse all projects</a>
+    </p>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <p class="eyebrow">Experience</p>
+        <h2>Where the work happened</h2>
+      </div>
+      <a class="text-link" href="/experience/">Full experience</a>
+    </div>
+    <div class="experience-grid">
+      {% for item in experience %}
+      {% if loop.index0 < 3 %}
+      <article class="experience-card reveal">
+        <div class="experience-card__top">
+          <div>
+            <p class="eyebrow">{{ item.type }}</p>
+            <h3>{{ item.role }}</h3>
+            <p class="experience-card__org">{{ item.org }}</p>
+          </div>
+          {% if item.logo %}
+          <img class="experience-card__logo" src="{{ item.logo }}" alt="{{ item.org }} logo" width="160" height="48" loading="lazy">
+          {% endif %}
+        </div>
+        <p>{{ item.summary }}</p>
+        {% if item.project %}
+        <a class="text-link" href="{{ item.project }}">Related project</a>
+        {% endif %}
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <p class="eyebrow">Capabilities</p>
+        <h2>Tools used on real hardware</h2>
+      </div>
+      <p>Skills shown in the context of design, manufacturing, and testing — not as a keyword dump.</p>
+    </div>
+    <div class="skills-grid">
+      {% for group in skills.groups %}
+      <div class="skill-group reveal">
+        <h3>{{ group.title }}</h3>
+        <ul>
+          {% for skill in group.items %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container approach-panel reveal">
+    <div>
+      <p class="eyebrow">Approach</p>
+      <h2>Built for manufacturability and validation</h2>
+      <p>
+        My strongest projects start with geometry and constraints, move through analysis, and end with parts I can machine, assemble, and test. That loop is the through-line across Formula SAE, internship fixture work, and rocket systems.
+      </p>
+      <ol class="process-list">
+        <li><strong>01</strong><span>Define loads, packaging, and manufacturing limits early.</span></li>
+        <li><strong>02</strong><span>Iterate CAD and analysis until the design is both strong and buildable.</span></li>
+        <li><strong>03</strong><span>Machine, assemble, instrument, and compare results to the model.</span></li>
+      </ol>
+      <div class="cta-row">
+        <a class="button" href="/about/">About Andrew</a>
+        <a class="button button--secondary" href="/contact/">Contact</a>
+      </div>
+    </div>
+    <img
+      src="/assets/images/portrait.jpg"
+      alt="Portrait of Andrew Estrada"
+      width="1276"
+      height="1920"
+      loading="lazy"
+    >
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="final-cta reveal">
+      <div>
+        <h2>Looking for a mechanical engineer who builds hardware?</h2>
+        <p>
+          Open to mechanical design, manufacturing, tooling, test, and product-development roles where CAD, analysis, and shop-floor execution all matter.
+        </p>
+      </div>
+      <div class="cta-row">
+        <a class="button" href="{{ site.resume.pdf }}">Resume PDF</a>
+        <a class="button button--secondary" href="mailto:{{ site.email }}">Email Andrew</a>
+      </div>
+    </div>
+  </div>
+</section>
