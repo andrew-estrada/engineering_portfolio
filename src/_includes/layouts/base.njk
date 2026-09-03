@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if pageTitle %}
+    {% set metaTitle = pageTitle %}
+  {% elif title %}
+    {% set metaTitle = title + " | " + site.name %}
+  {% else %}
+    {% set metaTitle = site.name + " — " + site.title %}
+  {% endif %}
+  <title>{{ metaTitle }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+  <meta name="author" content="{{ site.name }}">
+  <meta name="theme-color" content="#1c232b">
+
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:site_name" content="{{ site.name }} — Mechanical Engineer">
+  <meta property="og:title" content="{{ metaTitle }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+  <meta property="og:image" content="{{ (ogImage or site.ogImage) | absoluteUrl(site.url) }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ metaTitle }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ (ogImage or site.ogImage) | absoluteUrl(site.url) }}">
+
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Archivo:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "email": "{{ site.email }}",
+    "jobTitle": "{{ site.title }}",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "{{ site.education.school }}"
+    },
+    "sameAs": [
+      "{{ site.linkedin }}"
+    ],
+    "knowsAbout": {{ site.focusAreas | dump | safe }}
+  }
+  </script>
+  {% if schemaExtra %}{{ schemaExtra | safe }}{% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "components/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "components/footer.njk" %}
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

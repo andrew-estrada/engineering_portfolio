@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+permalink: /experience/
+title: Experience
+description: Manufacturing engineering internship at Parker Meggitt, engineering internship at Accu-Glass, Formula SAE co-founder experience, and NASA Student Launch avionics work.
+---
+<header class="page-hero">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">Experience</p>
+    <h1>Engineering experience</h1>
+    <p class="lede">
+      Internship and team roles spanning manufacturing engineering, precision machining, vehicle systems, and flight hardware testing.
+    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container timeline">
+    {% for item in experience %}
+    <article class="timeline-item reveal">
+      <div class="timeline-item__meta">
+        <p class="eyebrow">{{ item.type }}</p>
+        {% if item.logo %}
+        <img class="timeline-item__logo" src="{{ item.logo }}" alt="{{ item.org }} logo" width="140" height="40" loading="lazy">
+        {% endif %}
+      </div>
+      <div>
+        <h2>{{ item.role }}</h2>
+        <p><strong>{{ item.org }}</strong></p>
+        <p>{{ item.summary }}</p>
+        <ul>
+          {% for highlight in item.highlights %}
+          <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+        <ul class="tag-list">
+          {% for skill in item.skills %}
+          <li>{{ skill }}</li>
+          {% endfor %}
+        </ul>
+        {% if item.project %}
+        <p><a class="text-link" href="{{ item.project }}">View related project</a></p>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="final-cta">
+      <div>
+        <h2>Prefer the one-page version?</h2>
+        <p>Download the resume PDF for a concise overview of education, experience, and technical skills.</p>
+      </div>
+      <a class="button" href="{{ site.resume.pdf }}">Download resume</a>
+    </div>
+  </div>
+</section>

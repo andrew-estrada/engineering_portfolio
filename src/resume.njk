@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+permalink: /resume/
+title: Resume
+description: Download Andrew Estrada’s mechanical engineering resume covering Formula SAE, manufacturing internships, CNC machining, and technical skills.
+---
+<header class="page-hero">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">Resume</p>
+    <h1>Resume</h1>
+    <p class="lede">
+      One-page overview of education, experience, and technical skills for mechanical engineering roles.
+    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container contact-panel">
+    <div class="resume-panel">
+      <h2>Download PDF</h2>
+      <p>
+        Use the PDF for applications and quick screening. Project pages on this site provide deeper engineering context.
+      </p>
+      <div class="cta-row">
+        <a class="button" href="{{ site.resume.pdf }}">Download resume PDF</a>
+        <a class="button button--secondary" href="/experience/">View experience</a>
+      </div>
+      <img
+        class="resume-preview"
+        src="{{ site.resume.preview }}"
+        alt="Preview of Andrew Estrada’s resume"
+        width="737"
+        height="885"
+        loading="lazy"
+      >
+    </div>
+    <div class="contact-card">
+      <h2>Quick facts</h2>
+      <ul class="contact-list">
+        <li><strong>Degree:</strong> {{ site.education.degree }}</li>
+        <li><strong>School:</strong> {{ site.education.school }}</li>
+        <li><strong>Focus:</strong> Mechanical design, manufacturing, tooling, test</li>
+        <li><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><strong>LinkedIn:</strong> <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">Profile</a></li>
+      </ul>
+    </div>
+  </div>
+</section>

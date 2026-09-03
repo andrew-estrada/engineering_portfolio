@@ -1,0 +1,31 @@
+{
+  "name": "andrew-estrada-portfolio",
+  "version": "3.0.0",
+  "description": "Mechanical engineering portfolio for Andrew Estrada \u2014 Eleventy static site",
+  "private": true,
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-estrada/engineering_portfolio.git"
+  },
+  "keywords": [
+    "eleventy",
+    "mechanical-engineering",
+    "portfolio"
+  ],
+  "author": "Andrew Estrada",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/andrew-estrada/engineering_portfolio/issues"
+  },
+  "homepage": "https://andrewgestrada.com",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-img": "^5.0.0"
+  },
+  "type": "module"
+}

@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+permalink: /contact/
+title: Contact
+description: Contact Andrew Estrada about mechanical engineering roles, internships follow-up, or technical portfolio questions.
+---
+<header class="page-hero">
+  <div class="container page-hero__inner">
+    <p class="eyebrow">Contact</p>
+    <h1>Let’s talk engineering roles</h1>
+    <p class="lede">
+      Reach out for mechanical design, manufacturing, tooling, test, or product-development opportunities.
+    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container contact-panel">
+    <div class="contact-card">
+      <h2>Direct contact</h2>
+      <p>
+        Email is the fastest way to reach me. LinkedIn is also welcome for recruiting conversations.
+      </p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li><strong>LinkedIn:</strong> <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">linkedin.com/in/andrew-estrada2024</a></li>
+        <li><strong>Resume:</strong> <a href="{{ site.resume.pdf }}">Download PDF</a></li>
+      </ul>
+      <div class="cta-row">
+        <a class="button" href="mailto:{{ site.email }}">Email Andrew</a>
+        <a class="button button--secondary" href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h2>Best-fit roles</h2>
+      <ul>
+        {% for role in site.targetRoles %}
+        <li>{{ role }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

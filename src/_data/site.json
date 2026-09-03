@@ -1,0 +1,33 @@
+{
+  "name": "Andrew Estrada",
+  "title": "Mechanical Engineer",
+  "tagline": "Design, analysis, manufacturing, and testing for real hardware.",
+  "description": "Mechanical engineering portfolio of Andrew Estrada — Formula SAE suspension design, manufacturing engineering internships, CNC machining, and NASA Student Launch experience.",
+  "url": "https://andrewgestrada.com",
+  "email": "andrewgestrada@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/andrew-estrada2024",
+  "location": "Arizona, United States",
+  "education": {
+    "degree": "B.S. Mechanical Engineering",
+    "school": "Northern Arizona University"
+  },
+  "resume": {
+    "pdf": "/assets/files/Andrew-Estrada-Resume.pdf",
+    "preview": "/assets/images/resume-preview.jpg"
+  },
+  "ogImage": "/assets/images/projects/fsae-hero.jpg",
+  "focusAreas": [
+    "Mechanical Design",
+    "Manufacturing Engineering",
+    "Fixture & Tooling Design",
+    "Testing & Validation"
+  ],
+  "targetRoles": [
+    "Mechanical Engineer",
+    "Mechanical Design Engineer",
+    "Manufacturing Engineer",
+    "Tooling Engineer",
+    "Test Engineer",
+    "Product Development Engineer"
+  ]
+}

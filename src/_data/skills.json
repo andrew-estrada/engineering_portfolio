@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "title": "Design & Analysis",
+      "items": [
+        "SolidWorks",
+        "Fusion 360",
+        "Inventor",
+        "ANSYS",
+        "MATLAB",
+        "Lotus Shark",
+        "GD&T",
+        "DFM / DFA"
+      ]
+    },
+    {
+      "title": "Manufacturing",
+      "items": [
+        "CNC mill & lathe operation",
+        "Mastercam",
+        "Haas equipment / VPS",
+        "Tormach",
+        "Fixture design",
+        "Technical drawings",
+        "Lean / 6S",
+        "FDM 3D printing"
+      ]
+    },
+    {
+      "title": "Test & Validation",
+      "items": [
+        "Structural analysis correlation",
+        "Data acquisition",
+        "VBOX / RaceBox",
+        "Ground testing",
+        "Quality inspection",
+        "Work instructions"
+      ]
+    }
+  ]
+}
